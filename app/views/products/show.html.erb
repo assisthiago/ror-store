@@ -4,6 +4,8 @@
     <p><%= @product.description %></p>
 <% end %>
 
+<%= render "inventory", product: @product %>
+
 <%= link_to "Back", products_path %>
 
 <% if authenticated? %>
